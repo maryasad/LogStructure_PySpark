@@ -1,17 +1,21 @@
 # Healthcare Log Processing with Hadoop
 
-A Hadoop/PySpark-based project for processing healthcare ETL log files, extracting important information, and creating a structured mapping database.
-
 ## Project Overview
+A scalable, Hadoop-based solution for processing and analyzing healthcare ETL log files. This project transforms unstructured log data into a normalized SQL database, enabling efficient analysis of ETL processes, data transformations, and system patterns.
 
-This project processes healthcare data warehouse log files that contain ETL (Extract, Transform, Load) process information. It extracts meaningful data from text-based log entries and creates a structured mapping database for better tracking and analysis.
+### Key Features
+- Processes large-scale healthcare ETL log files using Hadoop/PySpark
+- Extracts stored procedures and database operations from log text
+- Creates normalized SQL mapping database for analysis
+- Runs in containerized environment using Docker
+- Enables tracking of data transformations and ETL patterns
 
-### Features
-- Processes ETL log files from healthcare data warehouse
-- Extracts stored procedure names and affected tables
-- Creates structured mapping database
-- Uses Hadoop/PySpark for scalable processing
-- Containerized with Docker for easy deployment
+### Business Value
+- **Data Analysis**: Transform raw logs into structured, queryable data
+- **Pattern Recognition**: Identify common ETL patterns and transformations
+- **Process Monitoring**: Track and analyze ETL operations
+- **Scalability**: Handle large volumes of log data efficiently
+- **Maintainability**: Containerized solution for easy deployment
 
 ## Prerequisites
 

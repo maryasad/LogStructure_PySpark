@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    volumes:
+      - ./data:/app/data
+      - ./src:/app/src
+    environment:
+      - SPARK_LOCAL_IP=localhost
+    ports:
+      - "4040:4040"  # Spark UI port
+    deploy:
+      resources:
+        limits:
+          memory: 4g
+        reservations:
+          memory: 2g
